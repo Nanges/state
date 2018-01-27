@@ -12,3 +12,14 @@ class Command
         this.undo = undo;
     }
 }
+
+class StateManager
+{
+    constructor(){
+        this._states = {};
+    }
+
+    register(){
+
+    }
+}
