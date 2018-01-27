@@ -19,7 +19,8 @@ class StateManager
         this._states = {};
     }
 
-    register(){
-
+    register(name, commands){
+        if(this._states.hasOwnProperty(name)) return;
+        this._states[name] = commands;
     }
 }
