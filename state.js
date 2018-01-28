@@ -36,7 +36,6 @@ class StateManager
     }
 
     dispatch(osCommands, nsCommands){
-        
         //undo old state commands
         osCommands
         .diff(nsCommands)
@@ -46,7 +45,6 @@ class StateManager
         nsCommands
         .diff(osCommands)
         .forEach(c => c.redo());
-
     }
 }
 
